@@ -1,1 +1,5 @@
-teste
+pandas
+scikit-learn
+fastapi
+uvicorn
+joblib
