@@ -33,8 +33,10 @@ class CustomerData(BaseModel):
 
 @app.post("/predict")
 def predict_nps(data: CustomerData):
-    # Transforma o JSON recebido em um formato de tabela (DataFrame) que a IA entende
+    # Transforma o JSON recebido em um formato de tabela (DataFrame) que a IA vai conseguir compreender do jeito que eu quero
     df = pd.DataFrame([data.dict()])
+    
+    df = df[model.feature_names_in_]
     
     # Faz a previsão
     previsao = model.predict(df)[0]
