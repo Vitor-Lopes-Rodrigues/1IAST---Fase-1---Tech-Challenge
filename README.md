@@ -26,7 +26,7 @@ O projeto foi estruturado seguindo boas práticas de Ciência de Dados e Engenha
 ├── data/
 │   └── raw/                   # Base de dados original em formato CSV
 ├── docs/
-│   └── respostas_tech_challenge.pdf    # Respostas às questões do Tech Challenge
+│   └── TECH_Challenge.pdf    # Respostas às questões do Tech Challenge
 ├── models/
 │   └── modelo_nps.pkl         # Modelo preditivo treinado e serializado
 ├── notebooks/                 # Notebooks com a esteira de análise e modelagem
@@ -112,3 +112,9 @@ jupyter notebook
 - `notebooks/01_exploracao_de_dados.ipynb` — Análise Exploratória (EDA) e Storytelling
 - `notebooks/02_modelo_preditivo.ipynb` — Treinamento do modelo preditivo
 - `notebooks/scriptsAutomation/03_simulador_de_cenarios.ipynb` — Simulador de cenários operacionais
+
+---
+
+### Apresentação do trabalho
+
+Link para o video: [Post Tech Fiap Fase01](https://youtu.be/lT-LJhv4dkk?si=34HSy8P3PjABmCnu)
