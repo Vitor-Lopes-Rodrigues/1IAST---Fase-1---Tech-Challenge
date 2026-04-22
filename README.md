@@ -6,11 +6,11 @@ Bem-vindo ao repositório do projeto de previsão de Net Promoter Score (NPS) pa
 
 ## Membros
 
-- Gabriela de Lima Lopes - RM372467
-- Pedro Henrique Gomes - RM372427
-- Vitor Lopes Rodrigues - RM372427
-- Lucas Oliveira dos Santos Lima - RM372651
-- Mateus Quintino Vieira dos Santos - RM371795
+- [Gabriela de Lima Lopes] [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrieladelimalopes/) - RM372467
+- [Pedro Henrique Gomes] [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedrogomes95/) - RM372427
+- [Vitor Lopes Rodrigues] [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitor-lopes-rodrigues/) - RM372427
+- [Lucas Oliveira dos Santos Lima] [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasoslima/) - RM372651
+- [Mateus Quintino Vieira dos Santos] [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateusqsantos/) - RM371795
 
 ## 🎯 Objetivo do Projeto
 
@@ -112,6 +112,32 @@ jupyter notebook
 - `notebooks/01_exploracao_de_dados.ipynb` — Análise Exploratória (EDA) e Storytelling
 - `notebooks/02_modelo_preditivo.ipynb` — Treinamento do modelo preditivo
 - `notebooks/scriptsAutomation/03_simulador_de_cenarios.ipynb` — Simulador de cenários operacionais
+
+---
+
+## 🐳 Executando a API com Docker
+
+### Execução
+
+1. Build o arquivo docker:
+
+```bash
+- docker build -t api-nps .
+```
+
+2. Após o término da construção, inicie o container mapeando para a porta 8000:
+
+```bash
+docker run -d -p 8000:8000 api-nps
+```
+
+3. Após o Build corretamente, navegar até
+
+```bash
+http://localhost:8000/docs#/
+```
+
+4. Esta api funciona apenas para o modelo preditivo de NPS, favor seguir documentações do localhost 
 
 ---
 
