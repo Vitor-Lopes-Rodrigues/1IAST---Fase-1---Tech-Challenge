@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: tech_challenge_api
+    ports:
+      - "8000:8000"
+    # O volume abaixo é opcional, mas excelente para desenvolvimento!
+    # Ele espelha a pasta local para dentro do container.
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1 # Faz os logs do Python aparecerem no terminal instantaneamente

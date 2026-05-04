@@ -8,7 +8,7 @@ Bem-vindo ao repositório do projeto de previsão de Net Promoter Score (NPS) pa
 
 * **Gabriela de Lima Lopes** (RM372467) ➔ [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabrieladelimalopes/)
 * **Pedro Henrique Gomes** (RM372427) ➔ [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedrogomes95/)
-* **Vitor Lopes Rodrigues** (RM372427) ➔ [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitor-lopes-rodrigues/)
+* **Vitor Lopes Rodrigues** (RM371617) ➔ [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitor-lopes-rodrigues/)
 * **Lucas Oliveira dos Santos Lima** (RM372651) ➔ [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasoslima/)
 * **Mateus Quintino Vieira dos Santos** (RM371795) ➔ [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateusqsantos/)
 
@@ -115,7 +115,7 @@ jupyter notebook
 
 ---
 
-## 🐳 Executando a API com Docker
+## 🐳 Executando a API com Docker ou Docker Compose
 
 ### Execução
 
@@ -137,7 +137,25 @@ docker run -d -p 8000:8000 api-nps
 http://localhost:8000/docs#/
 ```
 
-4. Esta api funciona apenas para o modelo preditivo de NPS, favor seguir documentações do localhost 
+4. Para Docker-Compose
+```bash
+docker-compose up --build -d
+```
+
+5. Após o Build corretamente, navegar até
+
+```bash
+http://localhost:8000/docs
+```
+
+6. Através da interface do Swagger, você poderá enviar dados de teste em formato JSON e receber a predição do NPS elaborada pelo nosso modelo.
+
+7. Para parar a execução do container:
+```bash
+docker-compose down
+```
+
+8. Esta api funciona apenas para o modelo preditivo de NPS, favor seguir documentações do localhost 
 
 ---
 
